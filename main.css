@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    /* color: rgb(73, 37, 11); */
+    color: blue;
+    letter-spacing: -0.03em;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: rgb(214, 233, 255);
+}
+
+h1,
+h2 {
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    text-align: center;
+    letter-spacing: 0;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 1;
+}
+
+.mono {
+    font-family: monospace;
+    letter-spacing: normal;
+}
+
+p {
+    font-family: sans-serif;
+    margin: 1.5rem 0;
+    text-align: justify;
+    line-height: 150%;
+    font-size: 1.125rem;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 0.125em;
+}
+
+main {
+    padding: 1rem;
+}
+
+img,
+video,
+.description {
+    display: block;
+    width: 30rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.description {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+
+.rotate-1 {
+    transform: rotate(-57deg);
+    margin: 0.375rem auto;
+}

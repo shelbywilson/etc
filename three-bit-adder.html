@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Workbench:SCAN@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .diagram-container {
+            position: relative;
+            aspect-ratio: 3/ 4;
+            max-width: 30rem;
+            margin: 0 auto;
+        }
+
+        .diagram-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .diagram-overlay h6 {
+            font-size: 2rem;
+            position: absolute;
+            font-weight: 300;
+        }
+
+        .diagram-overlay h6:first-child {
+            top: 27%;
+            left: 45%;
+        }
+
+        .diagram-overlay h6:nth-child(2) {
+            top: 27%;
+            left: 60%;
+        }
+
+        .diagram-overlay h6:nth-child(3) {
+            top: 33.5%;
+            left: 45%;
+        }
+
+        .diagram-overlay h6:nth-child(4) {
+            top: 33.5%;
+            left: 60%;
+        }
+
+        .diagram-overlay h6:nth-child(5) {
+            top: 65%;
+            left: 32%;
+        }
+
+        .diagram-overlay h6:nth-child(6) {
+            top: 65%;
+            left: 46%;
+        }
+
+        .diagram-overlay h6:nth-child(7) {
+            top: 65%;
+            left: 58%;
+        }
+
+        .diagram-overlay h6:nth-child(8) {
+            top: 27%;
+            left: 83.5%;
+        }
+
+        .diagram-overlay h6:nth-child(9) {
+            top: 33.5%;
+            left: 76%;
+        }
+
+        .diagram-overlay h6:nth-child(10) {
+            top: 65%;
+            left: 76%;
+        }
+
+        table {
+            border-spacing: 0;
+            border: 1px solid;
+            border-bottom: 0;
+        }
+
+        td, th {
+            border-bottom: 1px solid;
+            text-align: right;
+            padding: 0.5rem;
+        }
+
+        td:first-child, th:first-child {
+            border-right: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <a href="/"><h1>ETC</h1></a>
+        <h2>3-bit Adder</h2>
+        <img src="three-bit-adder/IMG_4545.jpg" alt="full adder" />
+        <div class="description">
+            <p>
+                This 3-bit adder is an experiment in visible circuits and visible wiring, woven into a suspended window
+                hanging.
+            </p>
+            <p>
+                Using binary logic, two values can be added together with a sum displayed as encoded LEDs.
+            </p>
+        </div>
+        <div class="two-column">
+
+            <img src="three-bit-adder/IMG_4526.jpg" alt="full adder" />
+            <div class="diagram-container">
+                <img src="three-bit-adder/IMG_4526.jpg" alt="full adder" />
+                <div class="diagram-overlay mono">
+                    <h6>
+                        1
+                    </h6>
+                    <h6>
+                        1
+                    </h6>
+                    <h6>
+                        1
+                    </h6>
+                    <h6>
+                        1
+                    </h6>
+                    <h6>
+                        1
+                    </h6>
+                    <h6>
+                        1
+                    </h6>
+                    <h6>
+                        0
+                    </h6>
+
+                    <h6>
+                        3
+                    </h6>
+                    <h6>
+                        + 3
+                    </h6>
+                    <h6>
+                        = 6
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <p>
+                Each row of input consists of 2 bits; a copper wire closes the circuit to represent a <span class="mono">1</span> or "on" value,
+                while an open circuit represents a <span class="mono">0</span> or "off" value.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Binary</th>
+                        <th>Decimal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="mono">00</td>
+                        <td class="mono">0</td>
+                    </tr>
+                    <tr>
+                        <td class="mono">01</td>
+                        <td class="mono">1</td>
+                    </tr>
+                    <tr>
+                        <td class="mono">10</td>
+                        <td class="mono">2</td>
+                    </tr>
+                    <tr>
+                        <td class="mono">11</td>
+                        <td class="mono">3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                In the example above all 4 loops are closed, representing <span style="text-wrap: nowrap;"><span class="mono">3 + 3</span></span> or <span class="mono">11<sub>2</sub></span> +  <span class="mono">11<sub>2</sub></span>
+                (binary). This results in the maximum sum of this adder: <span class="mono">6</span> or <span class="mono">110<sub>2</sub></span> (binary).
+            </p>
+        </div>
+        <img src="three-bit-adder/IMG_4514.jpg" alt="full adder" />
+        <video src="three-bit-adder/1.mp4" autoplay controls muted loop class="rotate-1"></video>
+        <img src="three-bit-adder/IMG_5026.jpg" alt="full adder" />
+
+        <div class="two-column">
+            <img src="three-bit-adder/IMG_4468.jpg" alt="full adder" />
+            <img src="three-bit-adder/IMG_4469.jpg" alt="full adder" />
+        </div>
+
+        <video src="three-bit-adder/2.mp4" autoplay controls muted loop></video>
+        <div class="description">
+            <p>
+                Created at SFPC, Fall 2019
+            </p>
+        </div>
+        <img src="wires/IMG_4055.jpg" alt="hello world" />
+        <video src="wires/3.mp4" autoplay controls muted loop></video>
+
+        <div class="description">
+            <p>
+                An earlier experiment using wire, LEDs, and a resistor to create a simple circuit that spells out "hello world".
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>
