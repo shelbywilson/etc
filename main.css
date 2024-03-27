@@ -35,7 +35,7 @@ h2 {
 
 p {
     font-family: sans-serif;
-    margin: 1.5rem 0;
+    margin: 0;
     text-align: justify;
     line-height: 150%;
     font-size: 1.125rem;
@@ -61,11 +61,12 @@ video,
 }
 
 .description {
-    padding: 1rem;
+    padding: 2.5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .two-column {
