@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Beaded textiles</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Workbench:SCAN@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <style>
-        iframe {
-            display: block;
-            height: 810px;
-            width: 780px;
-            border: 0;
-            transform: scale(0.5);
-            margin: -202px auto;
+        .grid {
+            max-width: 53rem;
+            gap: 1rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
         }
     </style>
 </head>
 
 <body>
-    <main>
+    <header>
         <a href="/">
             <h1>ETC</h1>
         </a>
+    </header>
+    <main>
         <h2>Beaded Textiles</h2>
         <img src="sun-bag/IMG_3642.jpg" alt="small beaded purse with an image of a sun" />
         <div class="description">
@@ -35,11 +36,10 @@
             </p>
             <p>
                 I made this small beaded purse in 2002, when I was 10 or 11 years old. I would
-                draw patterns in my graph paper notebook that I could translate 1 to 1 into a beaded array.
+                draw patterns in my graph paper notebook that I could translate into a beaded array.
             </p>
         </div>
-        <iframe
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSy9qzL2S0KwlPPyqxrYQPv716hw-PGQy7jXb_ixqByWrwSuyKZan9lgUF3OPajVL-HCfiD5FgeH5Cn/pubhtml?widget=true&amp;headers=false"></iframe>
+        <img src="sun-bag/1.png" alt="screenshot of google sheets in sun pattern"/>
         <div class="description">
             <p>
                 Recreation of graph paper using <a
@@ -47,30 +47,41 @@
                     target="_blank">google sheets</a>, 2024
             </p>
         </div>
-            <!-- <img src="sun-bag/IMG_3643.jpg" alt="small beaded purse with an image of a sun" /> -->
+        <!-- <img src="sun-bag/IMG_3643.jpg" alt="small beaded purse with an image of a sun" /> -->
         <img src="sun-bag/IMG_3644.jpg" alt="small beaded purse with an image of a sun" />
         <div class="description">
             <p>
-                The relationship between pixels and beads/fabric continues to fascinate me and I've recently started playing
-                with a bead loom again.
+                The relationship between pixels and beads/fabric/weaving continues to fascinate me and I've picked up a bead loom again recently.
             </p>
-        </div>
-        <div class="two-column" style="width: 50rem;">
-            <img src="tiles/IMG_5399.jpg" />
-            <img style="max-width: 16rem; margin-left: auto;" src="tiles/3.png" />
-        </div>
 
-        <div class="two-column" style="width: 50rem;">
-            <img src="tiles/IMG_1964.jpg" />
-            <img style="max-width: 16rem; margin-left: auto;" src="tiles/1.png" />
         </div>
-
+        <img src="sun-bag/IMG_1599.jpeg" alt="top down view of a bead loom" />
         <div class="description">
             <p>
-                I've also been cataloging decorative tile around my neighborhood in Seattle with plans to create beaded versions. These patterns change every block and half or so, and I haven't found an explanation as to why.
+                I've also been cataloging decorative tile around my neighborhood in Seattle for a future project, maybe. These patterns change every few blocks, and I haven't found an explanation as to
+                who decided the pattern or why they change.
             </p>
         </div>
+        <div class="grid">
+            <img src="tiles/IMG_1964.jpg" />
+            <img style="max-width: 60%;" src="tiles/1.png" />
+            <img src="tiles/IMG_1592.jpg" />
+            <img src="tiles/IMG_1595.jpg" />
+            <img src="tiles/IMG_5399.jpg" />
+            <img style="max-width: 60%;" src="tiles/2.png" />
+            <img src="tiles/IMG_1591.jpg" />
+            <img src="tiles/IMG_1590.jpg" />
+            <img src="tiles/IMG_1593.jpg" />
+            <img src="tiles/IMG_1594.jpg" />
+            <img src="tiles/IMG_1587.jpg" />
+            <img src="tiles/IMG_1589.jpg" />
+        </div>
     </main>
+    <footer>
+        <p>
+            <a href="/shadow-weaving.html">Shadow weaving &rarr;</a>
+        </p>
+    </footer>
 </body>
 
 </html>

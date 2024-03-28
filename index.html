@@ -5,52 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>etc</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Workbench:SCAN@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <style>
         main {
-            min-height: 90vh;
+            min-height: 70vh;
             position: relative;
         }
 
         li {
             position: absolute;
-            top: 50%;
+            top: 42%;
             font-size: 1.5rem;
         }
 
         li:first-child {
-            left: 20%;
+            left: 22%;
         }
 
         li:nth-child(2) {
             left: 40%;
-            top: 30%;
+            top: 10%;
         }
 
         li:nth-child(3) {
             left: 60%;
-            top: 70%;
+            top: 60%;
         }
 
         li:nth-child(4) {
+            left: 67%;
+            top: 30%;
+        }
+
+        li:nth-child(5) {
             left: 38%;
             top: 84%;
         }
 
-        li:nth-child(5) {
-            left: 75%;
-            top: 44%;
+        footer {
+            max-width: 28.5rem;
+        }
+        
+        footer p {
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 800px) {
+            main {
+                height: 40rem;
+            }
+            li:first-child {
+                left: 12%;
+            }
+
+            li:nth-child(2) {
+                left: 30%;
+            }
+
+            li:nth-child(3) {
+                left: auto;
+                right: 2rem;
+            }
+
+            li:nth-child(4) {
+                left: auto;
+                right: 2rem;
+            }
+
+            li:nth-child(5) {
+                left: 5rem;
+            }
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <a href="/">
+            <h1>ETC</h1>
+        </a>
+    </header>
     <main>
-        <h1>ETC</h1>
         <ul>
             <li>
                 <a href="/beaded-textiles.html">Beaded textiles</a>
@@ -59,18 +98,30 @@
                 <a href="/shadow-weaving.html">Shadow weaving</a>
             </li>
             <li>
+                <a href="/album-of-weaving-patterns.html">Translation and encoding</a>
+            </li>
+            <li>
                 <a href="/three-bit-adder.html">3-bit adder</a>
             </li>
             <li>
-                <a href="/three-bit-adder.html">Translation and encoding</a>
-            </li>
-            <li>
-                <a href="/digital-weaving.html">Digital weaving</a>
+                <a href="/misc.html">Miscellaneous</a>
             </li>
         </ul>
     </main>
     <footer>
-        <h3>Shelby Wilson</h3>
+        <p>
+            Shelby Wilson is an artist and computer programmer. She learned how to sew, knit, crochet, and weave along
+            with a deep appreciation of math, science, and art from her mom.
+        </p>
+        <p style="display: flex; flex-direction: row; justify-content: space-between;">
+            <a href="https://shelby.cool" target="_blank">website</a>
+        
+            <a href="https://github.com/shelbywilson" target="_blank">github</a>
+        
+            <a href="https://are.na/shelby-wilson" target="_blank">are.na</a>
+        
+            <a href="https://read.cv/shelbywilson" target="_blank">cv</a>
+        </p>
     </footer>
 </body>
 

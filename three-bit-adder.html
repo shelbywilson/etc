@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>3-bit adder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Workbench:SCAN@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <style>
-        .diagram-container {
+        /* .diagram-container {
             position: relative;
             aspect-ratio: 3/ 4;
             max-width: 30rem;
@@ -81,7 +81,7 @@
         .diagram-overlay h6:nth-child(10) {
             top: 65%;
             left: 76%;
-        }
+        } */
 
         table {
             border-spacing: 0;
@@ -89,21 +89,33 @@
             border-bottom: 0;
         }
 
-        td, th {
+        td,
+        th {
             border-bottom: 1px solid;
             text-align: right;
             padding: 0.5rem;
         }
 
-        td:first-child, th:first-child {
+        td:first-child,
+        th:first-child {
             border-right: 1px solid;
+        }
+
+        .rotate-1 {
+            transform: rotate(-57deg);
+            margin: 0.375rem auto;
+            max-width: 48vw;
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <a href="/">
+            <h1>ETC</h1>
+        </a>
+    </header>
     <main>
-        <a href="/"><h1>ETC</h1></a>
         <h2>3-bit Adder</h2>
         <img src="three-bit-adder/IMG_4545.jpg" alt="full adder" />
         <div class="description">
@@ -118,7 +130,9 @@
         <div class="two-column">
 
             <img src="three-bit-adder/IMG_4526.jpg" alt="full adder" />
-            <div class="diagram-container">
+            <img src="three-bit-adder/diagram.png"
+                alt="full adder with description of encoding (3 + 3 = 6) layered on top" />
+            <!-- <div class="diagram-container">
                 <img src="three-bit-adder/IMG_4526.jpg" alt="full adder" />
                 <div class="diagram-overlay mono">
                     <h6>
@@ -153,11 +167,12 @@
                         = 6
                     </h6>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="description">
             <p>
-                Each row of input consists of 2 bits; a copper wire closes the circuit to represent a <span class="mono">1</span> or "on" value,
+                Each row of input consists of 2 bits; a copper wire closes the circuit to represent a <span
+                    class="mono">1</span> or "on" value,
                 while an open circuit represents a <span class="mono">0</span> or "off" value.
             </p>
             <table>
@@ -187,12 +202,15 @@
                 </tbody>
             </table>
             <p>
-                In the example above all 4 loops are closed, representing <span style="text-wrap: nowrap;"><span class="mono">3</span> + <span class="mono">3</span></span> or <span class="mono">11<sub>2</sub></span> + <span class="mono">11<sub>2</sub></span>
-                (binary). This results in the maximum sum of this adder: <span class="mono">6</span> or <span class="mono">110<sub>2</sub></span> (binary).
+                In the example above all 4 loops are closed, representing <span style="text-wrap: nowrap;"><span
+                        class="mono">3</span> + <span class="mono">3</span></span> or <span
+                    class="mono">11<sub>2</sub></span> + <span class="mono">11<sub>2</sub></span>
+                (binary). This results in the maximum sum of this adder: <span class="mono">6</span> or <span
+                    class="mono">110<sub>2</sub></span> (binary).
             </p>
         </div>
         <img src="three-bit-adder/IMG_4514.jpg" alt="full adder" />
-        <video src="three-bit-adder/1.mp4" autoplay controls muted loop class="rotate-1"></video>
+        <video src="three-bit-adder/1-mute.mp4" autoplay controls muted loop class="rotate-1"></video>
         <img src="three-bit-adder/IMG_5026.jpg" alt="full adder" />
 
         <div class="two-column">
@@ -200,21 +218,28 @@
             <img src="three-bit-adder/IMG_4469.jpg" alt="full adder" />
         </div>
 
-        <video src="three-bit-adder/2.mp4" autoplay controls muted loop></video>
+        <video src="three-bit-adder/2-mute.mp4" autoplay controls muted loop></video>
         <div class="description">
             <p>
-                Created at SFPC, Fall 2019
+                Created at <a href="https://sfpc.study/" target="_blank">SFPC</a> in <a
+                    href="https://cwandt.com/pages/about" target="_blank">CW&T's</a> hardware class, Fall 2019
             </p>
         </div>
         <img src="wires/IMG_4055.jpg" alt="hello world" />
-        <video src="wires/3.mp4" autoplay controls muted loop></video>
+        <video src="wires/3-mute.mp4" autoplay controls muted loop></video>
 
         <div class="description">
             <p>
-                An earlier experiment using wire, LEDs, and a resistor to create a simple circuit that spells out "hello world".
+                An earlier experiment using wire, LEDs, and a resistor to create a simple circuit that spells out "hello
+                world".
             </p>
         </div>
     </main>
+    <footer>
+        <p>
+            <a href="/album-of-weaving-patterns.html">Translation and encoding &rarr;</a>
+        </p>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation and encoding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Workbench:SCAN@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @keyframes page {
+            0% {
+                opacity: 1;
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            25.01% {
+                opacity: 0;
+            }
+
+            75% {
+                opacity: 0;
+            }
+
+            75.01% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .book-page {
+            border: 1px solid gray;
+            position: relative;
+        }
+
+        .book-page img {
+            position: absolute;
+            animation: page 10s linear infinite;
+        }
+
+        .book-page img:nth-child(2) {
+            animation-delay: 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <h1>ETC</h1>
+        </a>
+    </header>
+    <main>
+        <h2>Translation and Encoding</h2>
+        <div style="overflow: hidden;">
+            <img style="margin-bottom: -0.25rem; " src="digital-weaving/animation.gif" alt="" />
+        </div>
+        <div class="description">
+            <p>
+                <a href="https://shelby.cool/v1/patterns.html" target="_blank">Album of Weaving Patterns</a> is a
+                translation and encoding of a Russian weaving manual for multi-harness looms published in 1912. It is a practice in archiving, as well as reinterpretion.
+            </p>
+            <p>
+                This project begain in 2013 with an email from my mom, after a PDF copy of the manual was sent to her.
+            </p>
+        </div>
+        <img src="digital-weaving/email.png" alt="" />
+        <div class="two-column" style="gap: 0">
+            <img src="digital-weaving/book-cover.png" alt="" />
+            <div class="book-page">
+                <img src="digital-weaving/book.png" alt="" />
+                <img src="digital-weaving/book-2.png" alt="" />
+            </div>
+        </div>
+        <div class="description">
+            <p>
+                I encoded these patterns as arrays of binary corresponding to the threading, tie-up, and treadling(s) of
+                each pattern and compiled a dictionary of weaving specific terms. In creating this website, I learned how to read weaving drafts and rendered these arrays to generated previews of the fabrics.
+            </p>
+        </div>
+        <div class="two-column">
+            <img src="digital-weaving/encoding.png" alt="" />
+            <img src="digital-weaving/dictionary.png" alt="" />
+        </div>
+        <div class="description">
+            <p>
+                I also created an <a href="https://shelby.cool/v1/patterns/builder.html" target="_blank">editable
+                    interface</a>, which allows new patterns to be created or existing ones to be modified. 
+            </p>
+        </div>
+        <div style="overflow: hidden;">
+            <img style="margin-top: -2rem;" src="digital-weaving/1.gif" alt="" />
+        </div>
+    </main>
+    <footer>
+        <p>
+            <a href="/misc.html">Miscellaneous &rarr;</a>
+        </p>
+    </footer>
+</body>
+
+</html>
