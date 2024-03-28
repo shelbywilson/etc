@@ -112,6 +112,12 @@ footer p {
     text-align: right;
 }
 
+footer p:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 800px) {
     .two-column {
         gap: 0;
