@@ -90,7 +90,8 @@ a {
 }
 
 a:hover,
-a:hover * {
+a:hover *,
+li:hover {
     color: rgb(79, 27, 8);
 }
 
