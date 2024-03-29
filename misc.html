@@ -12,7 +12,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Workbench:SCAN@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <style>
+        .embroidery {
+            position: relative;
+            width: 100%;
+            max-width: 30rem;
+            margin: 0 auto;
+            aspect-ratio: 1 / 1;
+        }
 
+        .embroidery img {
+            opacity: 0;
+            position: absolute;
+            animation: page 7s linear infinite;
+        }
+
+        .embroidery img:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .embroidery img:nth-child(3) {
+            animation-delay: 2s;
+        }
+
+        .embroidery img:nth-child(4) {
+            animation-delay: 3s;
+        }
+
+        .embroidery img:nth-child(5) {
+            animation-delay: 4s;
+        }
+
+        .embroidery img:nth-child(6) {
+            animation-delay: 5s;
+        }
+
+        .embroidery img:nth-child(7) {
+            animation-delay: 6s;
+        }
+
+        .embroidery img:nth-child(8) {
+            animation-delay: 7s;
+        }
     </style>
 </head>
 
@@ -66,13 +106,32 @@
         <img src="https://raw.githubusercontent.com/shelbywilson/sfpc-rtp/master/muriel/images/muriel.gif" />
         <div class="description">
             <p>
-                A kind of <a href="https://shelby.cool/#/muriel" target="_blank"> digital tapestry</a> using text as input, created with OpenFrameworks
+                A kind of <a href="https://shelby.cool/#/muriel" target="_blank"> digital tapestry</a> using text as
+                input, created with OpenFrameworks
             </p>
         </div>
+        <video src="embroidery/timelapse-compressed.mp4" loop muted controls autoplay></video>
+        <img src="embroidery/IMG_6876.png" alt="" />
+        <div class="description">
+            <p>
+                A gift for my partner, an embroidered version of <a href="https://spacefiller.space/livingwall/"
+                    target="_blank">his artwork</a>
+            </p>
+        </div>
+        <!-- <div class="embroidery">
+            <img src="embroidery/IMG_6801.png" alt="" />
+            <img src="embroidery/IMG_6860.png" alt="" />
+            <img src="embroidery/IMG_6861.png" alt="" />
+            <img src="embroidery/IMG_6862.png" alt="" />
+            <img src="embroidery/IMG_6863.png" alt="" />
+            <img src="embroidery/IMG_6865.png" alt="" />
+            <img src="embroidery/IMG_6866.png" alt="" />
+            <img src="embroidery/IMG_6887.png" alt="" />
+        </div> -->
     </main>
     <footer>
         <p>
-            <a href="/album-of-weaving-patterns.html">&larr; Translation and encoding</a>
+            <a href="/album-of-weaving-patterns.html">&larr; Translation <br class="mobile-only" /> and encoding</a>
             <a href="/shadow-weaving.html">Shadow weaving &rarr;</a>
         </p>
     </footer>

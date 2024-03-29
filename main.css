@@ -1,3 +1,29 @@
+@keyframes page {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    25.01% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    75.01% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 * {
     box-sizing: border-box;
     /* color: rgb(73, 37, 11); */
@@ -63,7 +89,7 @@ a {
     padding-bottom: 0.125em;
 }
 
-a:hover, 
+a:hover,
 a:hover * {
     color: rgb(79, 27, 8);
 }
@@ -118,6 +144,19 @@ footer p:last-child {
     justify-content: space-between;
 }
 
+footer a {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+footer a:first-child {
+    text-align: left;
+}
+
+.mobile-only {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
     .two-column {
         gap: 0;
@@ -125,5 +164,9 @@ footer p:last-child {
 
     h2 {
         font-size: 3rem;
+    }
+
+    .mobile-only {
+        display: block;
     }
 }
