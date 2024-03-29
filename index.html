@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="main.css">
     <style>
         main {
-            min-height: 70vh;
+            min-height: 76vh;
             position: relative;
         }
 
@@ -21,6 +21,7 @@
             position: absolute;
             top: 42%;
             font-size: 1.5rem;
+            line-height: 150%;
         }
 
         li:first-child {
@@ -38,47 +39,64 @@
         }
 
         li:nth-child(4) {
-            left: 67%;
-            top: 30%;
+            left: 62%;
+            top: 26%;
         }
 
         li:nth-child(5) {
             left: 38%;
-            top: 84%;
+            top: 78%;
         }
 
         footer {
             max-width: 28.5rem;
         }
-        
+
         footer p {
             text-align: justify;
         }
 
+        li a img {
+            width: 6rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        li a:hover img {
+            display: block;
+        }
+
         @media screen and (max-width: 800px) {
             main {
-                height: 40rem;
+                height: 44rem;
             }
+
             li:first-child {
-                left: 30%;
+                left: 4rem;
+                top: 6%;
             }
 
             li:nth-child(2) {
-                left: 12%;
+                left: auto;
+                right: 2rem
             }
 
             li:nth-child(3) {
                 left: auto;
-                right: 2rem;
+                right: 3rem;
             }
 
             li:nth-child(4) {
-                left: auto;
-                right: 2rem;
+                left: 26%;
             }
 
             li:nth-child(5) {
-                left: 5rem;
+                left: 40%;
+            }
+
+            li a img {
+                width: 4rem;
+                margin: 0.25rem 0 0 auto;
             }
         }
     </style>
@@ -93,19 +111,37 @@
     <main>
         <ul>
             <li>
-                <a href="/shadow-weaving.html">Shadow weaving</a>
+                <a href="/shadow-weaving.html">
+                    Shadow weaving
+
+                    <img src="previews/shadow-weaving.png" alt="shadow weaving" />
+                </a>
             </li>
             <li>
-                <a href="/beaded-textiles.html">Beaded textiles</a>
+                <a href="/beaded-textiles.html">
+                    Beaded textiles
+                    <img src="previews/beads.png" alt="bead loom" />
+                </a>
             </li>
             <li>
-                <a href="/album-of-weaving-patterns.html">Translation <br class="mobile-only" /> and encoding</a>
+                <a href="/album-of-weaving-patterns.html">
+                    Translation and encoding
+
+                    <img src="previews/weaving.png" alt="digital weaving" />
+                </a>
             </li>
             <li>
-                <a href="/three-bit-adder.html">3-bit adder</a>
+                <a href="/three-bit-adder.html">
+                    3-bit adder
+                    <img src="previews/wires.png" alt="3-bit adder" />
+                </a>
             </li>
             <li>
-                <a href="/misc.html">Miscellaneous</a>
+                <a href="/misc.html">
+                    Miscellaneous
+
+                    <img src="previews/misc.png" alt="weaving" />
+                </a>
             </li>
         </ul>
     </main>
@@ -116,11 +152,11 @@
         </p>
         <p>
             <a href="https://shelby.cool" target="_blank">website</a>
-        
+
             <a href="https://github.com/shelbywilson" target="_blank">github</a>
-        
+
             <a href="https://are.na/shelby-wilson" target="_blank">are.na</a>
-        
+
             <a href="https://read.cv/shelbywilson" target="_blank">cv</a>
         </p>
     </footer>
